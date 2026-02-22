@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Headlines Hub</title>
+</head>
+<body style="text-align:center;font-family:Arial;">
+    <h1>Headlines Hub</h1>
+
+    <form action="/news" method="post">
+        <h2>Select Language</h2>
+        <select name="language">
+            <option>English</option>
+            <option>Telugu</option>
+            <option>Hindi</option>
+        </select>
+
+        <h2>Select Category</h2>
+        <select name="category">
+            <option value="sports">Sports</option>
+            <option value="medical">Medical</option>
+            <option value="politics">Politics</option>
+            <option value="education">Education</option>
+            <option value="others">Others</option>
+        </select>
+
+        <br><br>
+        <button type="submit">Get News</button>
+    </form>
+</body>
+</html>
