@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News</title>
+</head>
+<body style="font-family:Arial;">
+    <h1>{{ lang }} News</h1>
+    <a href="/">Back</a>
+    <hr>
+
+    {% for article in articles %}
+        <h3>{{ article.title }}</h3>
+        <p>{{ article.description }}</p>
+        <a href="{{ article.url }}" target="_blank">Read More</a>
+        <hr>
+    {% endfor %}
+</body>
+</html>
